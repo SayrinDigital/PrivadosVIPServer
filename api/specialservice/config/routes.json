@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/specialservices",
+      "handler": "Specialservice.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/specialservices/count",
+      "handler": "Specialservice.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/specialservices/:id",
+      "handler": "Specialservice.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/specialservices",
+      "handler": "Specialservice.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/specialservices/:id",
+      "handler": "Specialservice.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/specialservices/:id",
+      "handler": "Specialservice.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

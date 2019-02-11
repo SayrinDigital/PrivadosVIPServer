@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "whatsapps",
+  "info": {
+    "name": "whatsapp",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "message": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

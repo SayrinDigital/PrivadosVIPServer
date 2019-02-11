@@ -1,0 +1,37 @@
+{
+  "connection": "default",
+  "collectionName": "headers",
+  "info": {
+    "name": "header",
+    "description": "Main content that will be shown at beginning of website"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    },
+    "linkto": {
+      "default": "",
+      "type": "text"
+    },
+    "subtitle": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

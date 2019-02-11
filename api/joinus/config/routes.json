@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/joinuses",
+      "handler": "Joinus.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/joinuses/count",
+      "handler": "Joinus.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/joinuses/:id",
+      "handler": "Joinus.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/joinuses",
+      "handler": "Joinus.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/joinuses/:id",
+      "handler": "Joinus.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/joinuses/:id",
+      "handler": "Joinus.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

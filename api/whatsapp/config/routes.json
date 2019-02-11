@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/whatsapps",
+      "handler": "Whatsapp.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/whatsapps/count",
+      "handler": "Whatsapp.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/whatsapps/:id",
+      "handler": "Whatsapp.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/whatsapps",
+      "handler": "Whatsapp.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/whatsapps/:id",
+      "handler": "Whatsapp.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/whatsapps/:id",
+      "handler": "Whatsapp.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

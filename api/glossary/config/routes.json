@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/glossaries",
+      "handler": "Glossary.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/glossaries/count",
+      "handler": "Glossary.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/glossaries/:id",
+      "handler": "Glossary.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/glossaries",
+      "handler": "Glossary.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/glossaries/:id",
+      "handler": "Glossary.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/glossaries/:id",
+      "handler": "Glossary.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

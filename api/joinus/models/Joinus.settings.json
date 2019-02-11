@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "joinuses",
+  "info": {
+    "name": "joinus",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "subtitle": {
+      "default": "",
+      "type": "string"
+    },
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "content": {
+      "default": "",
+      "type": "text"
+    },
+    "linkto": {
+      "default": "",
+      "type": "string"
+    },
+    "linktext": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

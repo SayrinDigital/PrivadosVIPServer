@@ -1,0 +1,37 @@
+{
+  "connection": "default",
+  "collectionName": "comments",
+  "info": {
+    "name": "comment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "comment": {
+      "default": "",
+      "type": "text"
+    },
+    "rate": {
+      "default": "",
+      "max": 5,
+      "min": 1,
+      "type": "integer"
+    },
+    "escort": {
+      "model": "escort",
+      "via": "comments"
+    },
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "client": {
+      "model": "client",
+      "via": "comments"
+    }
+  }
+}

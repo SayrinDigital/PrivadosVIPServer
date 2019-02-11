@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/adgroups",
+      "handler": "Adgroup.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/adgroups/count",
+      "handler": "Adgroup.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/adgroups/:id",
+      "handler": "Adgroup.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/adgroups",
+      "handler": "Adgroup.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/adgroups/:id",
+      "handler": "Adgroup.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/adgroups/:id",
+      "handler": "Adgroup.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

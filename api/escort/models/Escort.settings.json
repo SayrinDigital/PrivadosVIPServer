@@ -1,0 +1,101 @@
+{
+  "connection": "default",
+  "collectionName": "escorts",
+  "info": {
+    "name": "escort",
+    "description": "Escort information"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "birthdate": {
+      "default": "",
+      "type": "date"
+    },
+    "about": {
+      "default": "",
+      "type": "text"
+    },
+    "phone": {
+      "default": "",
+      "type": "string"
+    },
+    "height": {
+      "default": "",
+      "type": "string"
+    },
+    "location": {
+      "default": "",
+      "type": "string"
+    },
+    "profilephoto": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "escort"
+    },
+    "rating": {
+      "default": 0,
+      "type": "decimal"
+    },
+    "includedservices": {
+      "collection": "includedservice",
+      "via": "escort"
+    },
+    "specialservices": {
+      "collection": "specialservice",
+      "via": "escort"
+    },
+    "category": {
+      "model": "category",
+      "via": "escorts"
+    },
+    "email": {
+      "default": "",
+      "type": "email"
+    },
+    "password": {
+      "default": "",
+      "type": "password"
+    },
+    "price": {
+      "default": "",
+      "type": "integer"
+    },
+    "datework": {
+      "default": "",
+      "type": "string"
+    },
+    "startpublishing": {
+      "default": "",
+      "type": "date"
+    },
+    "endpublishing": {
+      "default": "",
+      "type": "date"
+    },
+    "characteristics": {
+      "collection": "characteristic",
+      "via": "escort"
+    },
+    "weightescort": {
+      "model": "weightescort",
+      "via": "escort"
+    },
+    "photos": {
+      "collection": "photo",
+      "via": "escort"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "specialservices",
+  "info": {
+    "name": "specialservice",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "escort": {
+      "model": "escort",
+      "via": "specialservices"
+    }
+  }
+}

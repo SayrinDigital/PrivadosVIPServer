@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/weightescorts",
+      "handler": "Weightescort.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/weightescorts/count",
+      "handler": "Weightescort.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/weightescorts/:id",
+      "handler": "Weightescort.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/weightescorts",
+      "handler": "Weightescort.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/weightescorts/:id",
+      "handler": "Weightescort.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/weightescorts/:id",
+      "handler": "Weightescort.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
