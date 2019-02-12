@@ -48,6 +48,14 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "fullname": {
+      "default": "",
+      "type": "string"
+    },
+    "escort": {
+      "model": "escort",
+      "via": "user"
     }
   },
   "collectionName": "users-permissions_user"

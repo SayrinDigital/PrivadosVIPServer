@@ -61,14 +61,6 @@
       "model": "category",
       "via": "escorts"
     },
-    "email": {
-      "default": "",
-      "type": "email"
-    },
-    "password": {
-      "default": "",
-      "type": "password"
-    },
     "price": {
       "default": "",
       "type": "integer"
@@ -96,6 +88,11 @@
     "photos": {
       "collection": "photo",
       "via": "escort"
+    },
+    "user": {
+      "model": "user",
+      "via": "escort",
+      "plugin": "users-permissions"
     }
   }
 }

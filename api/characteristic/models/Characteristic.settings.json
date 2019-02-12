@@ -17,8 +17,8 @@
     },
     "escort": {
       "collection": "escort",
-      "via": "characteristics",
-      "dominant": true
+      "dominant": true,
+      "via": "characteristics"
     }
   }
 }
