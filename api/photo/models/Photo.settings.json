@@ -20,6 +20,10 @@
     "escort": {
       "model": "escort",
       "via": "photos"
+    },
+    "isapproved": {
+      "default": false,
+      "type": "boolean"
     }
   }
 }
